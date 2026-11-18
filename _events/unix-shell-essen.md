@@ -9,7 +9,7 @@ sort_order: 2
 track: "foundational"
 detail: "Offering 2 (repeat)"
 lesson_key: "unix"
-registration_url: ""   # eveeno link
+registration_url: "https://eveeno.com/676802268"   # eveeno link
 setup_ready: true
 ---
 

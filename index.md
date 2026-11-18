@@ -52,8 +52,23 @@ workshop_requirements:
   default_registration_notice: >-
     Registration is required for each session via the Register button.
 
+# "Pathway" box below the workshop list (set enabled: false to hide it)
 certificate:
-  enabled: false
+  enabled: true
+  invitation: "Recommended pathway"
+  pathway_heading: "You don't have to attend everything."
+  pathway_description: >-
+    Every session can be booked on its own. For a solid foundation we
+    recommend one Unix Shell session, one Git session, and one Python
+    lesson – either "Programming with Python" or "Plotting and Programming
+    in Python" (both parts). That's four meetings in total.
+  requirements:
+    - count: 1
+      label: "Unix Shell"
+    - count: 1
+      label: "Git"
+    - count: 1
+      label: "Python lesson (Part I + II)"
 
 # DON'T CHANGE THIS
 layout: workshop

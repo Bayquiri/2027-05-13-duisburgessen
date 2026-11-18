@@ -9,7 +9,7 @@ sort_order: 4
 track: "foundational"
 detail: "Offering 2 (repeat)"
 lesson_key: "git"
-registration_url: ""   # eveeno link
+registration_url: "https://eveeno.com/130531956"   # eveeno link
 setup_ready: true
 ---
 

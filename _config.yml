@@ -61,8 +61,8 @@ subtitle: "University Library Duisburg-Essen – Research Data Management"
 workshop_brand:
   organization: "University of Duisburg-Essen"
   unit: "University Library"
-  primary: "#004C93"
-  # accent: "#FFD100"
+  primary: "#004494"
+  accent: "#7CC4AC"
   dark: "#333333"
   light: "#FFFFFF"
 
