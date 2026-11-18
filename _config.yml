@@ -54,7 +54,17 @@ pilot: false
 # Most workshops don't use extra pages. More information about extra
 # pages are included in the README:
 # https://github.com/carpentries/workshop-template#creating-extra-pages
-title: "Workshop Title"
+title: "Software Carpentry Workshop Series 2027"
+subtitle: "University Library Duisburg-Essen – Research Data Management"
+
+# Colours for the series layout. Quote them – an unquoted # starts a YAML comment!
+workshop_brand:
+  organization: "University of Duisburg-Essen"
+  unit: "University Library"
+  primary: "#004C93"
+  # accent: "#FFD100"
+  dark: "#333333"
+  light: "#FFFFFF"
 
 #------------------------------------------------------------
 # Incubator workshop settings (only relevant for workshops teaching a lesson
@@ -128,6 +138,10 @@ collections:
     output: true
     permalink: /:path/index.html
 
+  events:
+    output: true
+    permalink: /events/:name/
+
 # Set the default layout for things in the extras collection.
 defaults:
   - values:
@@ -136,6 +150,13 @@ defaults:
   - scope:
       path: ""
       type: extras
+    values:
+      root: ..
+      layout: page
+
+  - scope:
+      path: ""
+      type: events
     values:
       root: ..
       layout: page

@@ -1,0 +1,35 @@
+<article class="series-event-row">
+    <div class="series-event-date">
+        {% for workshop_date in include.event.event_dates %}
+        {{ workshop_date | date: "%a %b %-d" | upcase }}{% unless forloop.last %} + {% endunless %}
+        {% endfor %}
+    </div>
+
+    <div class="series-event-description">
+        <h4>{{ include.event.title }}</h4>
+        <span>{{ include.event.detail }}</span>
+        <span class="series-event-meta">{{ include.event.campus }} · {{ include.event.event_time }}</span>
+    </div>
+
+    <div class="series-event-actions">
+        {% if include.event.setup_ready %}
+        <a class="series-action series-action-secondary" href="{{ include.event.url | relative_url }}">
+            Prepare
+        </a>
+        {% else %}
+        <span class="series-action-unavailable">
+            Setup coming soon
+        </span>
+        {% endif %}
+
+        {% if include.event.registration_url and include.event.registration_url != "" %}
+        <a class="series-action series-action-primary" href="{{ include.event.registration_url }}" target="_blank" rel="noopener noreferrer">
+            Register
+        </a>
+        {% else %}
+        <span class="series-action-unavailable">
+            Registration coming soon
+        </span>
+        {% endif %}
+    </div>
+</article>

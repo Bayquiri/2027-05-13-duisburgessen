@@ -1,0 +1,4 @@
+{% assign workshop = site.pages | where: "path", "index.md" | first %}
+> **Need help?** If you run into problems with the setup, email
+> {% for email in workshop.email %}[{{ email }}](mailto:{{ email }}){% unless forloop.last %} or {% endunless %}{% endfor %}
+> before the workshop. If you still need assistance on the workshop date, bring your laptop and arrive about 15 minutes early.
